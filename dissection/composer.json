@@ -1,0 +1,11 @@
+{
+    "name": "vendor/dissection",
+    "description": "Description of project dissection.",
+    "authors": [
+        {
+            "name": "user",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,30 @@
+#welcome_user {
+display: block;
+width: 100%;
+color:black;
+margin: auto auto auto 35px;
+background-color:#76c2aa; 
+}
+
+#logout_button{
+display: block;
+margin: auto auto auto 45px;
+	
+}
+
+.services_css {
+	width:70%
+	
+}
+.services_css tr td{
+	background-color:#a8acac;
+	
+}
+
+#success_message{
+	color:#6ccc6a;
+}
+#faild_message{
+	color:#ff0000;
+	
+}

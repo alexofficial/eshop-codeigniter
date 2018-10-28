@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Model_users</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Model_users</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This class  : have all methods for user business administrator</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">copyright:</span> Copyright (c) 2014-2015, Alexander Patsanis</li>
+				<li><span class="field">name:</span> Model_users.</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_application---models---model_users.php.html">/application/models/model_users.php</a> (line <span class="field">18</span>)
+		</p>
+		
+				
+		<pre><a href="../CodeIgniter/Libraries/CI_Model.html">CI_Model</a>
+   |
+   --Model_users</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#add_contact" title="details" class="method-name">add_contact</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#add_password_recovery_user" title="details" class="method-name">add_password_recovery_user</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#add_temp_user" title="details" class="method-name">add_temp_user</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#add_user" title="details" class="method-name">add_user</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#check_if_number_exist" title="details" class="method-name">check_if_number_exist</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$where_var</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$where_data</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#check_user_exist" title="details" class="method-name">check_user_exist</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">date.</span>
+										<a href="#date" title="details" class="method-name">date</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#delete_temp_recovery_password" title="details" class="method-name">delete_temp_recovery_password</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#delete_user_order" title="details" class="method-name">delete_user_order</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$order_number</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user_email</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">true</span>
+										<a href="#general_send_email" title="details" class="method-name">general_send_email</a>
+											(<span class="var-type">undefined</span>&nbsp;<span class="var-name">$subject</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$message</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$send_to</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">uniqid</span>
+										<a href="#generate_md5_number" title="details" class="method-name">generate_md5_number</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$table</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$where_var</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">data.</span>
+										<a href="#get_orders_by_order_number" title="details" class="method-name">get_orders_by_order_number</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_delete_user" title="details" class="method-name">if_delete_user</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$user_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_delete_user_contact" title="details" class="method-name">if_delete_user_contact</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$countact_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_delete_user_request_service" title="details" class="method-name">if_delete_user_request_service</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$services_request_number</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user_email</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_email_exist" title="details" class="method-name">if_email_exist</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$email</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_update_password" title="details" class="method-name">if_update_password</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_update_user_account" title="details" class="method-name">if_update_user_account</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_user_add_service_request" title="details" class="method-name">if_user_add_service_request</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#insert_cart_shop" title="details" class="method-name">insert_cart_shop</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#is_key_password_recovery_valid" title="details" class="method-name">is_key_password_recovery_valid</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#is_key_valid" title="details" class="method-name">is_key_valid</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#search_result" title="details" class="method-name">search_result</a>
+											([<span class="var-type">type</span>&nbsp;<span class="var-name">$search_term</span> = <span class="var-default">'default'</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">data.</span>
+										<a href="#select_all_users" title="details" class="method-name">select_all_users</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">data.</span>
+										<a href="#select_user_by_email" title="details" class="method-name">select_user_by_email</a>
+											(<span class="var-type">type</span>&nbsp;<span class="var-name">$email</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#select_user_contacts" title="details" class="method-name">select_user_contacts</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">data.</span>
+										<a href="#select_user_email_password_recovery" title="details" class="method-name">select_user_email_password_recovery</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">data.</span>
+										<a href="#select_user_orders" title="details" class="method-name">select_user_orders</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">data.</span>
+										<a href="#select_user_password" title="details" class="method-name">select_user_password</a>
+											(<span class="var-type">type</span>&nbsp;<span class="var-name">$email</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">data.</span>
+										<a href="#select_user_request_services" title="details" class="method-name">select_user_request_services</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#update_user_password" title="details" class="method-name">update_user_password</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$email</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$password</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			
+Strict Standards: Only variables should be passed by reference in C:\xampp\php\pear\PhpDocumentor\phpDocumentor\Smarty-2.6.0\libs\Smarty_Compiler.class.php on line 712
+
+Strict Standards: Only variables should be passed by reference in C:\xampp\php\pear\PhpDocumentor\phpDocumentor\Smarty-2.6.0\libs\Smarty_Compiler.class.php on line 712
+<A NAME='method_detail'></A>
+
+<a name="methodadd_contact" id="add_contact"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_contact</span> (line <span class="line-number">572</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if add a new contact.</p>
+<p class="description"><p>Description:</p><p>This function make a insert query into user_contacts.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> add contact.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			add_contact
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodadd_password_recovery_user" id="add_password_recovery_user"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_password_recovery_user</span> (line <span class="line-number">138</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if add password recovery to user.</p>
+<p class="description"><p>Description:</p><p>This function make a insert query into temp user.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> add_password_recovery_user.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			add_password_recovery_user
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_temp_user" id="add_temp_user"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_temp_user</span> (line <span class="line-number">101</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if add temp user.</p>
+<p class="description"><p>Description:</p><p>This function make a insert query into temp user.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> add temp user.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			add_temp_user
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_user" id="add_user"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_user</span> (line <span class="line-number">323</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if add user.</p>
+<p class="description"><p>Description:</p><p>This function make a insert query into temp user.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> add user.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			add_user
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheck_if_number_exist" id="check_if_number_exist"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">check_if_number_exist</span> (line <span class="line-number">893</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Boolean function check if number number exist.</p>
+<p class="description"><p>Description:</p><p>This function select all $table and check if $where_data exist.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if find this $where_data return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			check_if_number_exist
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$where_var</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$where_data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$where_var</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$where_data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheck_user_exist" id="check_user_exist"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">check_user_exist</span> (line <span class="line-number">48</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function check if user exist.</p>
+<p class="description"><p>Description:</p><p>This function make a get query and then checks if exist.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if user exist return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> check user exist.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			check_user_exist
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddate" id="date"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">date</span> (line <span class="line-number">875</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function gives as system date with mdate format..</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> date.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">date.</span>
+		<span class="method-name">
+			date
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddelete_temp_recovery_password" id="delete_temp_recovery_password"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete_temp_recovery_password</span> (line <span class="line-number">391</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if delete temp recovery password.</p>
+<p class="description"><p>Description:</p><p>This function make a delete query into temp_recovery_password.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> delete temp recovery password.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			delete_temp_recovery_password
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddelete_user_order" id="delete_user_order"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete_user_order</span> (line <span class="line-number">368</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if delete user order.</p>
+<p class="description"><p>Description:</p><p>This function make a delete query into orders.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> delete user order.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			delete_user_order
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$order_number</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user_email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$order_number</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$user_email</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgeneral_send_email" id="general_send_email"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">general_send_email</span> (line <span class="line-number">31</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for send a general message.</p>
+<p class="description"><p>Description:</p><p>makes a send mail with subject and message which will give.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if email send success or faild if dont</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> general_send_email</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">true</span>
+		<span class="method-name">
+			general_send_email
+		</span>
+					(<span class="var-type">undefined</span>&nbsp;<span class="var-name">$subject</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$message</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$send_to</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">undefined</span>
+				<span class="var-name">$subject</span>			</li>
+					<li>
+				<span class="var-type">undefined</span>
+				<span class="var-name">$message</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$send_to</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgenerate_md5_number" id="generate_md5_number"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">generate_md5_number</span> (line <span class="line-number">855</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Boolean function generate md5 number .</p>
+<p class="description"><p>Description:</p><p>This function make a loop when while generate a uniqid number for spesifically table and row.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> number.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> generate md5 number.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">uniqid</span>
+		<span class="method-name">
+			generate_md5_number
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$table</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$where_var</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$table</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$where_var</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_orders_by_order_number" id="get_orders_by_order_number"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_orders_by_order_number</span> (line <span class="line-number">732</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function get orders by order number.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into temp user.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return data else return empty data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> get orders by order number.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">data.</span>
+		<span class="method-name">
+			get_orders_by_order_number
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodif_delete_user" id="if_delete_user"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_delete_user</span> (line <span class="line-number">531</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if delete user.</p>
+<p class="description"><p>Description:</p><p>This function make a insert query into temp user.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if_delete_user.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_delete_user
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$user_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$user_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_delete_user_contact" id="if_delete_user_contact"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_delete_user_contact</span> (line <span class="line-number">552</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if delete user contact.</p>
+<p class="description"><p>Description:</p><p>This function make a delete query to user_contacts .</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if delete user contact.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_delete_user_contact
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$countact_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$countact_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_delete_user_request_service" id="if_delete_user_request_service"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_delete_user_request_service</span> (line <span class="line-number">414</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if delete user request service.</p>
+<p class="description"><p>Description:</p><p>This function make a delete query into services_requests.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if delete user request service.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_delete_user_request_service
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$services_request_number</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$user_email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$services_request_number</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$user_email</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_email_exist" id="if_email_exist"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_email_exist</span> (line <span class="line-number">77</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function check if this email exist as user.</p>
+<p class="description"><p>Description:</p><p>This function make a get query and then checks if exist.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if user exist return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if email exist.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_email_exist
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$email</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_update_password" id="if_update_password"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_update_password</span> (line <span class="line-number">266</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function is if update password.</p>
+<p class="description"><p>Description:</p><p>This function make a get query .</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if_update_password.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_update_password
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_update_user_account" id="if_update_user_account"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_update_user_account</span> (line <span class="line-number">165</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if update user account.</p>
+<p class="description"><p>Description:</p><p>This function make a update query into user.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if_update_user_account.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_update_user_account
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodif_user_add_service_request" id="if_user_add_service_request"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_user_add_service_request</span> (line <span class="line-number">783</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Boolean function if user add a service request.</p>
+<p class="description"><p>Description:</p><p>This function if all is success insert a new service request.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success insert return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if user add service request.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_user_add_service_request
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodinsert_cart_shop" id="insert_cart_shop"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert_cart_shop</span> (line <span class="line-number">911</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Boolean function  if insert cart shop.</p>
+<p class="description"><p>Description:</p><p>This function insert cart shop.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success insert return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			insert_cart_shop
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodis_key_password_recovery_valid" id="is_key_password_recovery_valid"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_key_password_recovery_valid</span> (line <span class="line-number">244</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function is key password recovery valid.</p>
+<p class="description"><p>Description:</p><p>This function make a get query .</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> is key password recovery valid.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			is_key_password_recovery_valid
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodis_key_valid" id="is_key_valid"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">is_key_valid</span> (line <span class="line-number">222</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if is key valid.</p>
+<p class="description"><p>Description:</p><p>This function make a get query .</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> is key valid.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			is_key_valid
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsearch_result" id="search_result"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">search_result</span> (line <span class="line-number">950</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for search result .</p>
+<p class="description"><p>Description:</p><p>This function make a query into table products and collect data.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> search_result.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			search_result
+		</span>
+					([<span class="var-type">type</span>&nbsp;<span class="var-name">$search_term</span> = <span class="var-default">'default'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">type</span>
+				<span class="var-name">$search_term</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_all_users" id="select_all_users"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_users</span> (line <span class="line-number">435</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all users.</p>
+<p class="description"><p>Description:</p><p>This function make a get query from users.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return data else return error message.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all users.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">data.</span>
+		<span class="method-name">
+			select_all_users
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_user_by_email" id="select_user_by_email"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_user_by_email</span> (line <span class="line-number">495</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select_users_by_email.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into s user.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return data else return error message.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select users by email.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">data.</span>
+		<span class="method-name">
+			select_user_by_email
+		</span>
+					(<span class="var-type">type</span>&nbsp;<span class="var-name">$email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">type</span>
+				<span class="var-name">$email</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_user_contacts" id="select_user_contacts"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_user_contacts</span> (line <span class="line-number">597</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if add a new contact.</p>
+<p class="description"><p>Description:</p><p>This function make a select query into user_contacts.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of contacts data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> add contact.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			select_user_contacts
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_user_email_password_recovery" id="select_user_email_password_recovery"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_user_email_password_recovery</span> (line <span class="line-number">295</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select user email password recovery.</p>
+<p class="description"><p>Description:</p><p>This function make a get query from temp_recovery_password.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return data else return error message.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all users.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">data.</span>
+		<span class="method-name">
+			select_user_email_password_recovery
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$key</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_user_orders" id="select_user_orders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_user_orders</span> (line <span class="line-number">633</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select user orders.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into user.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return data else return empty data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select user orders.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">data.</span>
+		<span class="method-name">
+			select_user_orders
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_user_password" id="select_user_password"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_user_password</span> (line <span class="line-number">468</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select_user_password.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into user.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return data else return null data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select user password.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">data.</span>
+		<span class="method-name">
+			select_user_password
+		</span>
+					(<span class="var-type">type</span>&nbsp;<span class="var-name">$email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">type</span>
+				<span class="var-name">$email</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_user_request_services" id="select_user_request_services"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_user_request_services</span> (line <span class="line-number">685</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select user request services.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into temp user.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return data else return empty data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select user orders.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">data.</span>
+		<span class="method-name">
+			select_user_request_services
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdate_user_password" id="update_user_password"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">update_user_password</span> (line <span class="line-number">197</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if update user password.</p>
+<p class="description"><p>Description:</p><p>This function make a update query into user.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> update user password.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			update_user_password
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$email</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$password</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$email</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$password</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../CodeIgniter/Libraries/CI_Model.html">CI_Model</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../CodeIgniter/Libraries/CI_Model.html#method__construct">CI_Model::__construct()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2015 13:12:39 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

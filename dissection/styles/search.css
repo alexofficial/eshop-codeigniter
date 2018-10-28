@@ -1,0 +1,11 @@
+.search {
+    padding: 0px 0px 0px 0px;
+    background:rgba(50, 50, 50, 0.2);
+    padding-left:30px;       
+    color:#fafafa;
+}
+
+.search:hover  {
+    background-color:#207cca;
+
+}

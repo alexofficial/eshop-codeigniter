@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Statistics_model</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Statistics_model</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Description of graphs_model</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> user</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_application---models---statistics_model.php.html">/application/models/statistics_model.php</a> (line <span class="field">14</span>)
+		</p>
+		
+				
+		<pre><a href="../../CodeIgniter/Libraries/CI_Model.html">CI_Model</a>
+   |
+   --Statistics_model</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																												
+												<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#add_statistics_admin_orders_abstraction" title="details" class="method-name">add_statistics_admin_orders_abstraction</a>
+											(<span class="var-type">$table</span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#add_statistics_admin_orders_pluss" title="details" class="method-name">add_statistics_admin_orders_pluss</a>
+											(<span class="var-type">$table</span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#add_statistics_generics_pluss" title="details" class="method-name">add_statistics_generics_pluss</a>
+											(<span class="var-type">$table</span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#add_statistics_orders" title="details" class="method-name">add_statistics_orders</a>
+											(<span class="var-type">$total</span>&nbsp;<span class="var-name">$total</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#check_if_exist" title="details" class="method-name">check_if_exist</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$where_var</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$where_data</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">date.</span>
+										<a href="#date" title="details" class="method-name">date</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#select_orders_number" title="details" class="method-name">select_orders_number</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$date</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#statistics_orders_money_we_will_get" title="details" class="method-name">statistics_orders_money_we_will_get</a>
+											(<span class="var-type">$total</span>&nbsp;<span class="var-name">$total</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">data.</span>
+										<a href="#statistics_orders_per_day" title="details" class="method-name">statistics_orders_per_day</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodadd_statistics_admin_orders_abstraction" id="add_statistics_admin_orders_abstraction"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_statistics_admin_orders_abstraction</span> (line <span class="line-number">233</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function if statistics admin orders abstraction.</p>
+<p class="description"><p>Description:</p><p>first checks if date we add exist if exist update with abstraction statistics admin orders.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> add statistics admin orders abstraction.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			add_statistics_admin_orders_abstraction
+		</span>
+					(<span class="var-type">$table</span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$table</span>
+				<span class="var-name">$table</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_statistics_admin_orders_pluss" id="add_statistics_admin_orders_pluss"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_statistics_admin_orders_pluss</span> (line <span class="line-number">194</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function add statistics admin orders pluss.</p>
+<p class="description"><p>Description:</p><p>first checks if date we add exist if exist update with pluss statistics admin orders. else insert a new date.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> add statistics generics pluss.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			add_statistics_admin_orders_pluss
+		</span>
+					(<span class="var-type">$table</span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$table</span>
+				<span class="var-name">$table</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_statistics_generics_pluss" id="add_statistics_generics_pluss"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_statistics_generics_pluss</span> (line <span class="line-number">153</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function add statistics generics pluss.</p>
+<p class="description"><p>Description:</p><p>first checks if date we add exist if exist update with pluss statistics. else insert a new date.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> add statistics generics pluss.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			add_statistics_generics_pluss
+		</span>
+					(<span class="var-type">$table</span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$table</span>
+				<span class="var-name">$table</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_statistics_orders" id="add_statistics_orders"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_statistics_orders</span> (line <span class="line-number">44</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function add statistics orders.</p>
+<p class="description"><p>Description:</p><p>This function add statistics for orders.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success return true return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> add_statistics_orders.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			add_statistics_orders
+		</span>
+					(<span class="var-type">$total</span>&nbsp;<span class="var-name">$total</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$total</span>
+				<span class="var-name">$total</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheck_if_exist" id="check_if_exist"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">check_if_exist</span> (line <span class="line-number">270</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Boolean function check if something sexist.</p>
+<p class="description"><p>Description:</p><p>This function select all $table and check if $where_data exist.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if find this $where_data return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			check_if_exist
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$where_var</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$where_data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$where_var</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$where_data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddate" id="date"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">date</span> (line <span class="line-number">25</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function gives as system date with mdate format..</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> date.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">date.</span>
+		<span class="method-name">
+			date
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_orders_number" id="select_orders_number"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_orders_number</span> (line <span class="line-number">253</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			select_orders_number
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$date</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$date</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstatistics_orders_money_we_will_get" id="statistics_orders_money_we_will_get"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">statistics_orders_money_we_will_get</span> (line <span class="line-number">112</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function add statistics orders money we will get.</p>
+<p class="description"><p>Description:</p><p>first checks if date we add exist if exist update with pluss statistics orders money we will get per day. else insert a new date.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> statistics orders money we will get.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			statistics_orders_money_we_will_get
+		</span>
+					(<span class="var-type">$total</span>&nbsp;<span class="var-name">$total</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">$total</span>
+				<span class="var-name">$total</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstatistics_orders_per_day" id="statistics_orders_per_day"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">statistics_orders_per_day</span> (line <span class="line-number">71</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function add statistics orders per day.</p>
+<p class="description"><p>Description:</p><p>first checks if date we add exist if exist update with pluss statistics orders per day. else insert a new date.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> statistics orders per day.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">data.</span>
+		<span class="method-name">
+			statistics_orders_per_day
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../CodeIgniter/Libraries/CI_Model.html">CI_Model</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Model.html#method__construct">CI_Model::__construct()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Wed, 17 Dec 2014 18:10:29 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

@@ -1,0 +1,1681 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Home_page_controller</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Home_page_controller</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This class  : hosts all controll of home methods.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">copyright:</span> Copyright (c) 2014-2015, Alexander Patsanis</li>
+				<li><span class="field">name:</span> Home_page_controller.</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_application---controllers---home_page_controller.php.html">/application/controllers/home_page_controller.php</a> (line <span class="field">15</span>)
+		</p>
+		
+				
+		<pre><a href="../CodeIgniter/Libraries/CI_Controller.html">CI_Controller</a>
+   |
+   --Home_page_controller</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">void.</span>
+										<a href="#add_new_password_validator" title="details" class="method-name">add_new_password_validator</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#add_statistics_logins_per_day" title="details" class="method-name">add_statistics_logins_per_day</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#add_statistics_register_per_day" title="details" class="method-name">add_statistics_register_per_day</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">view</span>
+										<a href="#admin_page" title="details" class="method-name">admin_page</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">return</span>
+										<a href="#can_admin_login" title="details" class="method-name">can_admin_login</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">return</span>
+										<a href="#can_user_login" title="details" class="method-name">can_user_login</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">view</span>
+										<a href="#check_orders_status" title="details" class="method-name">check_orders_status</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">check</span>
+										<a href="#check_orders_status_view" title="details" class="method-name">check_orders_status_view</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">return</span>
+										<a href="#check_who_login" title="details" class="method-name">check_who_login</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">fix</span>
+										<a href="#fix_view" title="details" class="method-name">fix_view</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">forgot</span>
+										<a href="#forgot_password_view" title="details" class="method-name">forgot_password_view</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">true</span>
+										<a href="#general_send_email" title="details" class="method-name">general_send_email</a>
+											(<span class="var-type">undefined</span>&nbsp;<span class="var-name">$subject</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$message</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$send_to</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">orders</span>
+										<a href="#get_orders_by_order_number" title="details" class="method-name">get_orders_by_order_number</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">homePage</span>
+										<a href="#homePage" title="details" class="method-name">homePage</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">how</span>
+										<a href="#how_to_order_view" title="details" class="method-name">how_to_order_view</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_email_exist" title="details" class="method-name">if_email_exist</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$email</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">return</span>
+										<a href="#if_update_password" title="details" class="method-name">if_update_password</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">index</span>
+										<a href="#index" title="details" class="method-name">index</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">view</span>
+										<a href="#logged_admin_page" title="details" class="method-name">logged_admin_page</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">view</span>
+										<a href="#logged_user_page" title="details" class="method-name">logged_user_page</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">view</span>
+										<a href="#login_validator" title="details" class="method-name">login_validator</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">order</span>
+										<a href="#order_status_by_order_number_view" title="details" class="method-name">order_status_by_order_number_view</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$get_orders_by_number</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">view</span>
+										<a href="#password_recovery_validator" title="details" class="method-name">password_recovery_validator</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">payment</span>
+										<a href="#payment_methods_view" title="details" class="method-name">payment_methods_view</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">register</span>
+										<a href="#register_page" title="details" class="method-name">register_page</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">view</span>
+										<a href="#register_user" title="details" class="method-name">register_user</a>
+											(<span class="var-type">type</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">view</span>
+										<a href="#register_user_send_email" title="details" class="method-name">register_user_send_email</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void.</span>
+										<a href="#register_validator" title="details" class="method-name">register_validator</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">search</span>
+										<a href="#search_result" title="details" class="method-name">search_result</a>
+											(<span class="var-type">type</span>&nbsp;<span class="var-name">$search_input</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">search</span>
+										<a href="#search_view" title="details" class="method-name">search_view</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">return</span>
+										<a href="#select_all_categories" title="details" class="method-name">select_all_categories</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_all_deals_product" title="details" class="method-name">select_all_deals_product</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">return</span>
+										<a href="#select_all_product" title="details" class="method-name">select_all_product</a>
+											(<span class="var-type">type</span>&nbsp;<span class="var-name">$categorie</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">all</span>
+										<a href="#select_all_services" title="details" class="method-name">select_all_services</a>
+											(<span class="var-type">type</span>&nbsp;<span class="var-name">$categorie</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">services</span>
+										<a href="#select_all_services_categories" title="details" class="method-name">select_all_services_categories</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">return</span>
+										<a href="#select_user_password" title="details" class="method-name">select_user_password</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">return</span>
+										<a href="#set_session_user_data" title="details" class="method-name">set_session_user_data</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$session_data</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">shipping</span>
+										<a href="#shipping_methods_view" title="details" class="method-name">shipping_methods_view</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">show</span>
+										<a href="#show_products" title="details" class="method-name">show_products</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">service</span>
+										<a href="#show_service" title="details" class="method-name">show_service</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#stantar_home_data_view" title="details" class="method-name">stantar_home_data_view</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">view</span>
+										<a href="#user_password_recovery" title="details" class="method-name">user_password_recovery</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">view</span>
+										<a href="#user_password_recovery_view" title="details" class="method-name">user_password_recovery_view</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodadd_new_password_validator" id="add_new_password_validator"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_new_password_validator</span> (line <span class="line-number">1056</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for add new password validator.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> register_validator.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void.</span>
+		<span class="method-name">
+			add_new_password_validator
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodadd_statistics_logins_per_day" id="add_statistics_logins_per_day"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_statistics_logins_per_day</span> (line <span class="line-number">604</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function add statistics admin orders pluss.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to add statistics return true else return  false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> add_statistics_logins_per_day.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			add_statistics_logins_per_day
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodadd_statistics_register_per_day" id="add_statistics_register_per_day"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_statistics_register_per_day</span> (line <span class="line-number">640</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function add statistics register per day pluss.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to add statistics return true else return  false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> add statistics register per day.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			add_statistics_register_per_day
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodadmin_page" id="admin_page"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">admin_page</span> (line <span class="line-number">910</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function redirect to view of logged admin panel page.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of logged admin panel page.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> admin_page.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">view</span>
+		<span class="method-name">
+			admin_page
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcan_admin_login" id="can_admin_login"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">can_admin_login</span> (line <span class="line-number">1150</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function checks if admin try to login.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> boolean if exist return true else returns false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> can_admin_login.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">return</span>
+		<span class="method-name">
+			can_admin_login
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcan_user_login" id="can_user_login"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">can_user_login</span> (line <span class="line-number">1098</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function checks if user try to login.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> boolean if exist return true else returns false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> can_user_login.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">return</span>
+		<span class="method-name">
+			can_user_login
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcheck_orders_status" id="check_orders_status"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">check_orders_status</span> (line <span class="line-number">676</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for check orders status by order name.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of order if is success else a empty view.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> check_orders_status.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">view</span>
+		<span class="method-name">
+			check_orders_status
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcheck_orders_status_view" id="check_orders_status_view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">check_orders_status_view</span> (line <span class="line-number">449</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function check orders status view.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> orders status view.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> check_orders_status_view :
+
+ <p>Description:</p>
+
+ nologged user can see view of:
+ <ul>
+ <li>check orders status</li>
+ </ul>
+ nologged user can:
+ <ul>
+ <li>login</li>
+ <li>register</li>
+ <li>search products</li>
+ <li>recovery password</li>
+ <li>(main)check orders status</li>
+ </ul></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">check</span>
+		<span class="method-name">
+			check_orders_status_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcheck_who_login" id="check_who_login"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">check_who_login</span> (line <span class="line-number">1190</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for checks whos try to login.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> void.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> check_who_login.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">return</span>
+		<span class="method-name">
+			check_who_login
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodfix_view" id="fix_view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">fix_view</span> (line <span class="line-number">101</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function control fix view.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> page.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> fix_view :</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">fix</span>
+		<span class="method-name">
+			fix_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodforgot_password_view" id="forgot_password_view"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">forgot_password_view</span> (line <span class="line-number">376</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function control forgot password view of nologged.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> password view.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> forgot_password_view :
+
+ <p>Description:</p>
+
+ nologged user can see view of:
+ <ul>
+ <li>forgot password</li>
+ </ul>
+ nologged user can:
+ <ul>
+ <li>login</li>
+ <li>register</li>
+ <li>search products</li>
+ <li>(main)recovery password</li>
+ </ul></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">forgot</span>
+		<span class="method-name">
+			forgot_password_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgeneral_send_email" id="general_send_email"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">general_send_email</span> (line <span class="line-number">87</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for send a general message.</p>
+<p class="description"><p>Description:</p><p>makes a send mail with subject and message which will give.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if email send success or false if faild.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">true</span>
+		<span class="method-name">
+			general_send_email
+		</span>
+					(<span class="var-type">undefined</span>&nbsp;<span class="var-name">$subject</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$message</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$send_to</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">undefined</span>
+				<span class="var-name">$subject</span>			</li>
+					<li>
+				<span class="var-type">undefined</span>
+				<span class="var-name">$message</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$send_to</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_orders_by_order_number" id="get_orders_by_order_number"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_orders_by_order_number</span> (line <span class="line-number">659</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function get orders by order number.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> get_orders_by_order_number</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">orders</span>
+		<span class="method-name">
+			get_orders_by_order_number
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodhomePage" id="homePage"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">homePage</span> (line <span class="line-number">138</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function control index view of nologged.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> view.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> homePage :
+
+ <p>Description:</p>
+
+ nologged user can see view of:
+ <ul>
+ <li>index</li>
+ </ul>
+ nologged user can:
+ <ul>
+ <li>login</li>
+ <li>register</li>
+ <li>search products</li>
+ <li>recovery password</li>
+ </ul></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">homePage</span>
+		<span class="method-name">
+			homePage
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodhow_to_order_view" id="how_to_order_view"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">how_to_order_view</span> (line <span class="line-number">175</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function control how to order view of nologged.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> to order view.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> how_to_order_view :
+
+ <p>Description:</p>
+
+ nologged user can see view of:
+ <ul>
+ <li>how to order</li>
+ </ul>
+ nologged user can:
+ <ul>
+ <li>login</li>
+ <li>register</li>
+ <li>search products</li>
+ <li>recovery password</li>
+ </ul></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">how</span>
+		<span class="method-name">
+			how_to_order_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodif_email_exist" id="if_email_exist"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_email_exist</span> (line <span class="line-number">781</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function check if user email exist.</p>
+<p class="description"><p>Description:</p><p>This function make a model call function and checks if this email exist.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if user exist return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> if email exist.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_email_exist
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$email</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_update_password" id="if_update_password"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_update_password</span> (line <span class="line-number">1115</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function checks if update password.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> boolean if update return true else returns false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> if_update_password.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">return</span>
+		<span class="method-name">
+			if_update_password
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodindex" id="index"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">index</span> (line <span class="line-number">35</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function control index view of all users whos try to login.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> page of admin or user logged or not logged.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> index :
+
+ <p>Description:</p>
+
+ user can login as:
+ <ul>
+ <li>user</li>
+ <li>or admin</li>
+ </ul></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">index</span>
+		<span class="method-name">
+			index
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodlogged_admin_page" id="logged_admin_page"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">logged_admin_page</span> (line <span class="line-number">894</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function redirect to view of logged admin page.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of logged admin page.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> logged_admin_page.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">view</span>
+		<span class="method-name">
+			logged_admin_page
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodlogged_user_page" id="logged_user_page"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">logged_user_page</span> (line <span class="line-number">877</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function redirect to view of logged user page.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of logged user page.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> logged_user_page.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">view</span>
+		<span class="method-name">
+			logged_user_page
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodlogin_validator" id="login_validator"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">login_validator</span> (line <span class="line-number">972</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for login validator.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of whos login.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> login_validator.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">view</span>
+		<span class="method-name">
+			login_validator
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodorder_status_by_order_number_view" id="order_status_by_order_number_view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">order_status_by_order_number_view</span> (line <span class="line-number">486</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function control order status by order number view of nologged.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> status by order number view.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> order_status_by_order_number_view :
+
+ <p>Description:</p>
+
+ nologged user can see view of:
+ <ul>
+ <li>order status by order number</li>
+ </ul>
+ nologged user can:
+ <ul>
+ <li>login</li>
+ <li>register</li>
+ <li>search products</li>
+ <li>recovery password</li>
+ <li>(main)see order status by order number</li>
+ </ul></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">order</span>
+		<span class="method-name">
+			order_status_by_order_number_view
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$get_orders_by_number</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$get_orders_by_number</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodpassword_recovery_validator" id="password_recovery_validator"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">password_recovery_validator</span> (line <span class="line-number">708</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for password recovery validator.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of forgot password with message if success send mail for  recovery password or faild.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> password_recovery_validator.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">view</span>
+		<span class="method-name">
+			password_recovery_validator
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodpayment_methods_view" id="payment_methods_view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">payment_methods_view</span> (line <span class="line-number">210</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function control payment methods view of nologged.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> methods view.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> payment_methods_view :
+
+ <p>Description:</p>
+
+ nologged user can see view of:
+ <ul>
+ <li>payment methods</li>
+ </ul>
+ nologged user can:
+ <ul>
+ <li>login</li>
+ <li>register</li>
+ <li>search products</li>
+ <li>recovery password</li>
+ </ul></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">payment</span>
+		<span class="method-name">
+			payment_methods_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodregister_page" id="register_page"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">register_page</span> (line <span class="line-number">413</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function control register view of nologged.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> view.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> register_page :
+
+ <p>Description:</p>
+
+ nologged user can see view of:
+ <ul>
+ <li>register</li>
+ </ul>
+ nologged user can:
+ <ul>
+ <li>login</li>
+ <li>(main)register</li>
+ <li>search products</li>
+ <li>recovery password</li>
+ </ul></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">register</span>
+		<span class="method-name">
+			register_page
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodregister_user" id="register_user"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">register_user</span> (line <span class="line-number">798</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for user register.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of index with message if success or faild.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> register_user.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">view</span>
+		<span class="method-name">
+			register_user
+		</span>
+					(<span class="var-type">type</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">type</span>
+				<span class="var-name">$key</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodregister_user_send_email" id="register_user_send_email"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">register_user_send_email</span> (line <span class="line-number">926</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for send confirm email to success user register.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of index page with success message if success send email or   view of register_page with faild message.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> register_user_send_email.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">view</span>
+		<span class="method-name">
+			register_user_send_email
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodregister_validator" id="register_validator"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">register_validator</span> (line <span class="line-number">1004</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for register validator.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> register_validator.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void.</span>
+		<span class="method-name">
+			register_validator
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsearch_result" id="search_result"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">search_result</span> (line <span class="line-number">571</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all search result.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> result</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> search result</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">search</span>
+		<span class="method-name">
+			search_result
+		</span>
+					(<span class="var-type">type</span>&nbsp;<span class="var-name">$search_input</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">type</span>
+				<span class="var-name">$search_input</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsearch_view" id="search_view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">search_view</span> (line <span class="line-number">289</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function control search view of nologged.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> view.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> search :
+
+ <p>Description:</p>
+
+ nologged user can see view of:
+ <ul>
+ <li>search</li>
+ </ul>
+ nologged user can:
+ <ul>
+ <li>login</li>
+ <li>register</li>
+ <li>search products</li>
+ <li>recovery password</li>
+ <li>see search products</li>
+ </ul></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">search</span>
+		<span class="method-name">
+			search_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_categories" id="select_all_categories"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_categories</span> (line <span class="line-number">1231</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all categories.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> selected categories data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> set_session_user_data.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">return</span>
+		<span class="method-name">
+			select_all_categories
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_deals_product" id="select_all_deals_product"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_deals_product</span> (line <span class="line-number">555</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all deals product.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all deals product</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_all_deals_product
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_product" id="select_all_product"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_product</span> (line <span class="line-number">1248</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all product by category.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> selected products data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> select_all_product.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">return</span>
+		<span class="method-name">
+			select_all_product
+		</span>
+					(<span class="var-type">type</span>&nbsp;<span class="var-name">$categorie</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">type</span>
+				<span class="var-name">$categorie</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_all_services" id="select_all_services"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_services</span> (line <span class="line-number">587</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all services result.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> selected services data</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select_all_services</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">all</span>
+		<span class="method-name">
+			select_all_services
+		</span>
+					(<span class="var-type">type</span>&nbsp;<span class="var-name">$categorie</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">type</span>
+				<span class="var-name">$categorie</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_all_services_categories" id="select_all_services_categories"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_services_categories</span> (line <span class="line-number">622</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all services categories.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> categories data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all services categories</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">services</span>
+		<span class="method-name">
+			select_all_services_categories
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_user_password" id="select_user_password"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_user_password</span> (line <span class="line-number">1134</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for select_user_password.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> boolean if select user password return true else returns  false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> select_user_password.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">return</span>
+		<span class="method-name">
+			select_user_password
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$email</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset_session_user_data" id="set_session_user_data"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set_session_user_data</span> (line <span class="line-number">1171</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for set session user data.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> boolean if set userdata return true else returns false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> set_session_user_data.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">return</span>
+		<span class="method-name">
+			set_session_user_data
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$session_data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$session_data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshipping_methods_view" id="shipping_methods_view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">shipping_methods_view</span> (line <span class="line-number">250</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function control shipping methods view of nologged.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> methods view.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> shipping_methods_view :
+
+ <p>Description:</p>
+
+ nologged user can see view of:
+ <ul>
+ <li>shipping methods</li>
+ </ul>
+ nologged user can:
+ <ul>
+ <li>login</li>
+ <li>register</li>
+ <li>search products</li>
+ <li>recovery password</li>
+ <li>see shipping methods</li>
+ </ul></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">shipping</span>
+		<span class="method-name">
+			shipping_methods_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodshow_products" id="show_products"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">show_products</span> (line <span class="line-number">525</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function control show products of nologged.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> products.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> show_products :
+
+ <p>Description:</p>
+
+ nologged user can see view of:
+ <ul>
+ <li>show products</li>
+ </ul>
+ nologged user can:
+ <ul>
+ <li>login</li>
+ <li>register</li>
+ <li>search products</li>
+ <li>recovery password</li>
+ </ul></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">show</span>
+		<span class="method-name">
+			show_products
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodshow_service" id="show_service"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">show_service</span> (line <span class="line-number">330</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function control show service view of nologged.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> view.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> show_service :
+
+ <p>Description:</p>
+
+ nologged user can see view of:
+ <ul>
+ <li>services</li>
+ </ul>
+ Admin can:
+ <ul>
+ <li>login</li>
+ <li>register</li>
+ <li>search products</li>
+ <li>recovery password</li>
+ <li>see services</li>
+ </ul></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">service</span>
+		<span class="method-name">
+			show_service
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodstantar_home_data_view" id="stantar_home_data_view"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">stantar_home_data_view</span> (line <span class="line-number">63</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function gives to others functions of view some default data.</p>
+<p class="description"><p>Description of data:</p><p><ul><li>styles paths</li><li>image paths</li><li>categories data</li></ul></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array of all this data.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			stantar_home_data_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoduser_password_recovery" id="user_password_recovery"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">user_password_recovery</span> (line <span class="line-number">832</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for user register.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of index with message if success or faild.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> user_password_recovery.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">view</span>
+		<span class="method-name">
+			user_password_recovery
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoduser_password_recovery_view" id="user_password_recovery_view"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">user_password_recovery_view</span> (line <span class="line-number">852</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for view of user password recovery.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of user password recovery.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> user_password_recovery_view.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">view</span>
+		<span class="method-name">
+			user_password_recovery_view
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../CodeIgniter/Libraries/CI_Controller.html">CI_Controller</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../CodeIgniter/Libraries/CI_Controller.html#method__construct">CI_Controller::__construct()</a></span><br>
+													<span class="method-name"><a href="../CodeIgniter/Libraries/CI_Controller.html#methodget_instance">CI_Controller::get_instance()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2015 13:12:23 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

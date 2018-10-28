@@ -1,0 +1,1364 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class User_page_controller</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class User_page_controller</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">CodeIgniter Application Controller Class</p>
+<p class="description"><p>This class object is the super class that every library in  CodeIgniter will be assigned to.</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> ExpressionEngine Dev Team</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_application---controllers---user_page_controller.php.html">/application/controllers/user_page_controller.php</a> (line <span class="field">7</span>)
+		</p>
+		
+				
+		<pre><a href="../../CodeIgniter/Libraries/CI_Controller.html">CI_Controller</a>
+   |
+   --User_page_controller</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																				
+												<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_contact" title="details" class="method-name">add_contact</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_service_to_user" title="details" class="method-name">add_service_to_user</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_statistics_orders" title="details" class="method-name">add_statistics_orders</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$total</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#add_to_shop_cart" title="details" class="method-name">add_to_shop_cart</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#clear_cart_shop" title="details" class="method-name">clear_cart_shop</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#contact" title="details" class="method-name">contact</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#contact_delete_view" title="details" class="method-name">contact_delete_view</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#contact_history" title="details" class="method-name">contact_history</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#contact_validator" title="details" class="method-name">contact_validator</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#delete_user_contact" title="details" class="method-name">delete_user_contact</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$countact_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#delete_user_order" title="details" class="method-name">delete_user_order</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$order_number</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$user_email</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#delete_user_order_view" title="details" class="method-name">delete_user_order_view</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#delete_user_request_service" title="details" class="method-name">delete_user_request_service</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#destroy" title="details" class="method-name">destroy</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#final_shop_add" title="details" class="method-name">final_shop_add</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#history_orders_status" title="details" class="method-name">history_orders_status</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#history_services_request_status" title="details" class="method-name">history_services_request_status</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#if_delete_user_request_service" title="details" class="method-name">if_delete_user_request_service</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$services_request_number</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$user_email</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#if_update_user_account" title="details" class="method-name">if_update_user_account</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#index_user_page" title="details" class="method-name">index_user_page</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#insert_cart_shop" title="details" class="method-name">insert_cart_shop</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#message" title="details" class="method-name">message</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$message</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#orders_status" title="details" class="method-name">orders_status</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#remove_item_from_cart" title="details" class="method-name">remove_item_from_cart</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#search_result" title="details" class="method-name">search_result</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$search_input</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#search_view" title="details" class="method-name">search_view</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#select_all_categories" title="details" class="method-name">select_all_categories</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_all_deals_product" title="details" class="method-name">select_all_deals_product</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#select_all_product" title="details" class="method-name">select_all_product</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$categorie</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#select_all_services" title="details" class="method-name">select_all_services</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$categorie</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#select_all_services_categories" title="details" class="method-name">select_all_services_categories</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#select_users_by_email" title="details" class="method-name">select_users_by_email</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#select_user_contacts" title="details" class="method-name">select_user_contacts</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#select_user_orders" title="details" class="method-name">select_user_orders</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#select_user_request_services" title="details" class="method-name">select_user_request_services</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#services_status" title="details" class="method-name">services_status</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#show_products" title="details" class="method-name">show_products</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#show_products_refresh" title="details" class="method-name">show_products_refresh</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$category</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#show_service" title="details" class="method-name">show_service</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#show_service_by_category" title="details" class="method-name">show_service_by_category</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$category</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#show_service_for_service_request" title="details" class="method-name">show_service_for_service_request</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#stantar_user_data_view" title="details" class="method-name">stantar_user_data_view</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#statistics_download" title="details" class="method-name">statistics_download</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#update_shop_cart" title="details" class="method-name">update_shop_cart</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#update_user_account_validator" title="details" class="method-name">update_user_account_validator</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#user_account_view" title="details" class="method-name">user_account_view</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#user_logout" title="details" class="method-name">user_logout</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#view_order_shop_cart" title="details" class="method-name">view_order_shop_cart</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodadd_contact" id="add_contact"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_contact</span> (line <span class="line-number">217</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_contact
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodadd_service_to_user" id="add_service_to_user"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_service_to_user</span> (line <span class="line-number">639</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_service_to_user
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodadd_statistics_orders" id="add_statistics_orders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_statistics_orders</span> (line <span class="line-number">634</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_statistics_orders
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$total</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$total</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_to_shop_cart" id="add_to_shop_cart"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add_to_shop_cart</span> (line <span class="line-number">524</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			add_to_shop_cart
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodclear_cart_shop" id="clear_cart_shop"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">clear_cart_shop</span> (line <span class="line-number">666</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			clear_cart_shop
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcontact" id="contact"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">contact</span> (line <span class="line-number">57</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			contact
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcontact_delete_view" id="contact_delete_view"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">contact_delete_view</span> (line <span class="line-number">89</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			contact_delete_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcontact_history" id="contact_history"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">contact_history</span> (line <span class="line-number">72</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			contact_history
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcontact_validator" id="contact_validator"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">contact_validator</span> (line <span class="line-number">104</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			contact_validator
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddelete_user_contact" id="delete_user_contact"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete_user_contact</span> (line <span class="line-number">283</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			delete_user_contact
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$countact_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$countact_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddelete_user_order" id="delete_user_order"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete_user_order</span> (line <span class="line-number">272</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			delete_user_order
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$order_number</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$user_email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$order_number</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user_email</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddelete_user_order_view" id="delete_user_order_view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete_user_order_view</span> (line <span class="line-number">387</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			delete_user_order_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddelete_user_request_service" id="delete_user_request_service"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete_user_request_service</span> (line <span class="line-number">402</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			delete_user_request_service
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddestroy" id="destroy"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">destroy</span> (line <span class="line-number">548</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			destroy
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodfinal_shop_add" id="final_shop_add"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">final_shop_add</span> (line <span class="line-number">608</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			final_shop_add
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodhistory_orders_status" id="history_orders_status"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">history_orders_status</span> (line <span class="line-number">483</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			history_orders_status
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodhistory_services_request_status" id="history_services_request_status"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">history_services_request_status</span> (line <span class="line-number">503</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			history_services_request_status
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodif_delete_user_request_service" id="if_delete_user_request_service"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_delete_user_request_service</span> (line <span class="line-number">277</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			if_delete_user_request_service
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$services_request_number</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$user_email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$services_request_number</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$user_email</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_update_user_account" id="if_update_user_account"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_update_user_account</span> (line <span class="line-number">476</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			if_update_user_account
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodindex_user_page" id="index_user_page"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">index_user_page</span> (line <span class="line-number">179</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			index_user_page
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodinsert_cart_shop" id="insert_cart_shop"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert_cart_shop</span> (line <span class="line-number">470</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			insert_cart_shop
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodmessage" id="message"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">message</span> (line <span class="line-number">662</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			message
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$message</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$message</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodorders_status" id="orders_status"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">orders_status</span> (line <span class="line-number">368</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			orders_status
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodremove_item_from_cart" id="remove_item_from_cart"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">remove_item_from_cart</span> (line <span class="line-number">553</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			remove_item_from_cart
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsearch_result" id="search_result"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">search_result</span> (line <span class="line-number">228</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			search_result
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$search_input</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$search_input</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsearch_view" id="search_view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">search_view</span> (line <span class="line-number">35</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			search_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_categories" id="select_all_categories"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_categories</span> (line <span class="line-number">239</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			select_all_categories
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_deals_product" id="select_all_deals_product"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_deals_product</span> (line <span class="line-number">206</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all deals product.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> true return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all deals product</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_all_deals_product
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_product" id="select_all_product"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_product</span> (line <span class="line-number">255</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			select_all_product
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$categorie</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$categorie</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_all_services" id="select_all_services"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_services</span> (line <span class="line-number">261</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			select_all_services
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$categorie</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$categorie</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_all_services_categories" id="select_all_services_categories"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_services_categories</span> (line <span class="line-number">223</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			select_all_services_categories
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_users_by_email" id="select_users_by_email"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_users_by_email</span> (line <span class="line-number">266</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			select_users_by_email
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_user_contacts" id="select_user_contacts"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_user_contacts</span> (line <span class="line-number">233</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			select_user_contacts
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_user_orders" id="select_user_orders"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_user_orders</span> (line <span class="line-number">244</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			select_user_orders
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$table</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_user_request_services" id="select_user_request_services"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_user_request_services</span> (line <span class="line-number">249</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			select_user_request_services
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$table</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodservices_status" id="services_status"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">services_status</span> (line <span class="line-number">420</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			services_status
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodshow_products" id="show_products"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">show_products</span> (line <span class="line-number">288</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			show_products
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodshow_products_refresh" id="show_products_refresh"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">show_products_refresh</span> (line <span class="line-number">348</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			show_products_refresh
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$category</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$category</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshow_service" id="show_service"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">show_service</span> (line <span class="line-number">306</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			show_service
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodshow_service_by_category" id="show_service_by_category"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">show_service_by_category</span> (line <span class="line-number">324</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			show_service_by_category
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$category</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$category</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodshow_service_for_service_request" id="show_service_for_service_request"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">show_service_for_service_request</span> (line <span class="line-number">342</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			show_service_for_service_request
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodstantar_user_data_view" id="stantar_user_data_view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">stantar_user_data_view</span> (line <span class="line-number">21</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function gives to others functions of view some default data.</p>
+<p class="description"><p>Description of data:</p><p><ul><li>styles paths</li><li>image paths</li></ul></p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> array of all this data.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			stantar_user_data_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodstatistics_download" id="statistics_download"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">statistics_download</span> (line <span class="line-number">685</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			statistics_download
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodupdate_shop_cart" id="update_shop_cart"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">update_shop_cart</span> (line <span class="line-number">567</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			update_shop_cart
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodupdate_user_account_validator" id="update_user_account_validator"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">update_user_account_validator</span> (line <span class="line-number">125</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			update_user_account_validator
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoduser_account_view" id="user_account_view"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">user_account_view</span> (line <span class="line-number">160</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			user_account_view
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoduser_logout" id="user_logout"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">user_logout</span> (line <span class="line-number">212</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			user_logout
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodview_order_shop_cart" id="view_order_shop_cart"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">view_order_shop_cart</span> (line <span class="line-number">438</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			view_order_shop_cart
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../../CodeIgniter/Libraries/CI_Controller.html">CI_Controller</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Controller.html#method__construct">CI_Controller::__construct()</a></span><br>
+													<span class="method-name"><a href="../../CodeIgniter/Libraries/CI_Controller.html#methodget_instance">CI_Controller::get_instance()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Wed, 17 Dec 2014 18:10:36 +0100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>

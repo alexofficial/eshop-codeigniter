@@ -1,0 +1,1819 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Model_admin</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Model_admin</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This class  : have all methods for admin business administrator</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">copyright:</span> Copyright (c) 2014-2015, Alexander Patsanis</li>
+				<li><span class="field">name:</span> Model_admin.</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_application---models---model_admin.php.html">/application/models/model_admin.php</a> (line <span class="field">17</span>)
+		</p>
+		
+				
+		<pre><a href="../CodeIgniter/Libraries/CI_Model.html">CI_Model</a>
+   |
+   --Model_admin</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																				
+												<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#change_order" title="details" class="method-name">change_order</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$insert_tabel</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#change_request_services" title="details" class="method-name">change_request_services</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$insert_tabel</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#check_admin_exist" title="details" class="method-name">check_admin_exist</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#check_if_product_is_on_deal" title="details" class="method-name">check_if_product_is_on_deal</a>
+											(<span class="var-type">type</span>&nbsp;<span class="var-name">$product_id</span>, <span class="var-type">type</span>&nbsp;<span class="var-name">$product_categories</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#delete_row_from_table" title="details" class="method-name">delete_row_from_table</a>
+											(<span class="var-type">undefined</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$var_where</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$data_where</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">true</span>
+										<a href="#general_send_email" title="details" class="method-name">general_send_email</a>
+											(<span class="var-type">undefined</span>&nbsp;<span class="var-name">$subject</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$message</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$send_to</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#get_orders_by_order_number" title="details" class="method-name">get_orders_by_order_number</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_admin_add_user" title="details" class="method-name">if_admin_add_user</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_admin_update_product" title="details" class="method-name">if_admin_update_product</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$product_id</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$product_categories</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_admin_update_service" title="details" class="method-name">if_admin_update_service</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$service_id</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$service_categories</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_admin_update_user" title="details" class="method-name">if_admin_update_user</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$user_id</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_delete_category" title="details" class="method-name">if_delete_category</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$category_table_name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_delete_deals_product" title="details" class="method-name">if_delete_deals_product</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$deals_products_id</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$product_categories</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_delete_product" title="details" class="method-name">if_delete_product</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$product_id</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$product_categories</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_delete_service" title="details" class="method-name">if_delete_service</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$service_id</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$service_categories</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#if_delete_service_category" title="details" class="method-name">if_delete_service_category</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$category_table_name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">true</span>
+										<a href="#if_update_category" title="details" class="method-name">if_update_category</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$category_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$category_name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">true</span>
+										<a href="#if_update_services_category" title="details" class="method-name">if_update_services_category</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$category_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$category_name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#insert_cart_shop" title="details" class="method-name">insert_cart_shop</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#insert_category" title="details" class="method-name">insert_category</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#insert_image" title="details" class="method-name">insert_image</a>
+											(<span class="var-type">undefined</span>&nbsp;<span class="var-name">$product_id</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$product_categories</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#insert_product" title="details" class="method-name">insert_product</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#insert_product_image" title="details" class="method-name">insert_product_image</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$item_data</span> = <span class="var-default">array()</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$config</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$file_data</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#insert_product_to_deals" title="details" class="method-name">insert_product_to_deals</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$product_data</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#insert_service" title="details" class="method-name">insert_service</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#insert_service_category" title="details" class="method-name">insert_service_category</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#search_result" title="details" class="method-name">search_result</a>
+											([<span class="var-type">type</span>&nbsp;<span class="var-name">$search_term</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_all_cancelled_orders" title="details" class="method-name">select_all_cancelled_orders</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_all_cancelled_services_request" title="details" class="method-name">select_all_cancelled_services_request</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_all_categories" title="details" class="method-name">select_all_categories</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_all_deals_product" title="details" class="method-name">select_all_deals_product</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_all_finished_orders" title="details" class="method-name">select_all_finished_orders</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_all_finished_services_request" title="details" class="method-name">select_all_finished_services_request</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_all_orders" title="details" class="method-name">select_all_orders</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_all_product_by_category" title="details" class="method-name">select_all_product_by_category</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$category_name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_all_request_services" title="details" class="method-name">select_all_request_services</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_all_services_by_category" title="details" class="method-name">select_all_services_by_category</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$category_name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_all_services_categories" title="details" class="method-name">select_all_services_categories</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">data.</span>
+										<a href="#select_all_users_contacts" title="details" class="method-name">select_all_users_contacts</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">data.</span>
+										<a href="#select_all_users_email" title="details" class="method-name">select_all_users_email</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_category_id_by_name" title="details" class="method-name">select_category_id_by_name</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$category_name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_product" title="details" class="method-name">select_product</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$category_name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">if</span>
+										<a href="#select_service_category_id_by_name" title="details" class="method-name">select_service_category_id_by_name</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$category_name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">data.</span>
+										<a href="#select_user_by_email" title="details" class="method-name">select_user_by_email</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$email</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">true</span>
+										<a href="#send_newsletters" title="details" class="method-name">send_newsletters</a>
+											(<span class="var-type">undefined</span>&nbsp;<span class="var-name">$subject</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$message</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#update_contact" title="details" class="method-name">update_contact</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#update_orders_status" title="details" class="method-name">update_orders_status</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean.</span>
+										<a href="#update_request_services_status" title="details" class="method-name">update_request_services_status</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodchange_order" id="change_order"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">change_order</span> (line <span class="line-number">1413</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function change order.</p>
+<p class="description"><p>Description:</p><p>This function moves orders accordingly the status. Insert into $insert_tabel to order and after deleted from than that the use.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if all success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> change order.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			change_order
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$insert_tabel</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$insert_tabel</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodchange_request_services" id="change_request_services"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">change_request_services</span> (line <span class="line-number">1511</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function change request services.</p>
+<p class="description"><p>Description:</p><p>This function moves request services accordingly the status. Insert into $insert_tabel to request_services and after deleted from main table. use.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if all success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> change request services.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			change_request_services
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$insert_tabel</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$insert_tabel</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcheck_admin_exist" id="check_admin_exist"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">check_admin_exist</span> (line <span class="line-number">46</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function check if admin exist.</p>
+<p class="description"><p>Description:</p><p>This function make a get query and then checks if exist.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if admin exist return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">name:</span> check_admin_exist.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			check_admin_exist
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcheck_if_product_is_on_deal" id="check_if_product_is_on_deal"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">check_if_product_is_on_deal</span> (line <span class="line-number">1859</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function check if product is on deal.</p>
+<p class="description"><p>Description:</p><p>This function make a get query and then checks if exist.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if product exist return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> check_if_product_is_on_deal.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			check_if_product_is_on_deal
+		</span>
+					(<span class="var-type">type</span>&nbsp;<span class="var-name">$product_id</span>, <span class="var-type">type</span>&nbsp;<span class="var-name">$product_categories</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">type</span>
+				<span class="var-name">$product_id</span>			</li>
+					<li>
+				<span class="var-type">type</span>
+				<span class="var-name">$product_categories</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoddelete_row_from_table" id="delete_row_from_table"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">delete_row_from_table</span> (line <span class="line-number">1564</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean Generic function for delete a row with one where.</p>
+<p class="description"><p>Description:</p><p>This function delete a row from $table where $var_where=$data_where.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success delete return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> delete row from table.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			delete_row_from_table
+		</span>
+					(<span class="var-type">undefined</span>&nbsp;<span class="var-name">$table</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$var_where</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$data_where</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">undefined</span>
+				<span class="var-name">$table</span>			</li>
+					<li>
+				<span class="var-type">undefined</span>
+				<span class="var-name">$var_where</span>			</li>
+					<li>
+				<span class="var-type">undefined</span>
+				<span class="var-name">$data_where</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgeneral_send_email" id="general_send_email"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">general_send_email</span> (line <span class="line-number">29</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for send a general message.</p>
+<p class="description"><p>Description:</p><p>makes a send mail with subject and message which will give.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if email send success or faild if dont</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">true</span>
+		<span class="method-name">
+			general_send_email
+		</span>
+					(<span class="var-type">undefined</span>&nbsp;<span class="var-name">$subject</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$message</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$send_to</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">undefined</span>
+				<span class="var-name">$subject</span>			</li>
+					<li>
+				<span class="var-type">undefined</span>
+				<span class="var-name">$message</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$send_to</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget_orders_by_order_number" id="get_orders_by_order_number"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get_orders_by_order_number</span> (line <span class="line-number">1589</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function get order by order number.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database and select all information of orders with spesifically order number .</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data  else return return empty array  of data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> get orders by order number.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			get_orders_by_order_number
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodif_admin_add_user" id="if_admin_add_user"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_admin_add_user</span> (line <span class="line-number">73</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if admin add a user.</p>
+<p class="description"><p>Description:</p><p>This function make a data array of input post and insert it into users table.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to insert return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if admin add user.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_admin_add_user
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodif_admin_update_product" id="if_admin_update_product"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_admin_update_product</span> (line <span class="line-number">145</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if admin update a product.</p>
+<p class="description"><p>Description:</p><p>This function make a update query into database with input posts of changed. The params is the wheres into db query.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to update return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if admin update product.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_admin_update_product
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$product_id</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$product_categories</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$product_id</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$product_categories</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_admin_update_service" id="if_admin_update_service"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_admin_update_service</span> (line <span class="line-number">182</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if admin update service.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to update return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if admin update service.
+ <p>Description:</p>
+ This function make a update query into database with input posts of
+ changed.
+ The params is the wheres into db query.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_admin_update_service
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$service_id</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$service_categories</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$service_id</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$service_categories</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_admin_update_user" id="if_admin_update_user"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_admin_update_user</span> (line <span class="line-number">109</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if admin update a user.</p>
+<p class="description"><p>Description:</p><p>This function make a update query into database with input posts of changed.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to update return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if admin update user.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_admin_update_user
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$user_id</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$user_id</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_delete_category" id="if_delete_category"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_delete_category</span> (line <span class="line-number">1127</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if delete category.</p>
+<p class="description"><p>Description:</p><p>This function make two delete query first into products and then into category.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to delete two of them return true else return  false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if delete category.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_delete_category
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$category_table_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$category_table_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_delete_deals_product" id="if_delete_deals_product"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_delete_deals_product</span> (line <span class="line-number">1315</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if delete deals product.</p>
+<p class="description"><p>Description:</p><p>This function make a delete query into database. param $product_id and $product_categories used into where.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to delete return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if delete deals product.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_delete_deals_product
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$deals_products_id</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$product_categories</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$deals_products_id</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$product_categories</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_delete_product" id="if_delete_product"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_delete_product</span> (line <span class="line-number">1281</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if delete product.</p>
+<p class="description"><p>Description:</p><p>This function make a delete query into database. param $product_id and $product_categories used into where.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to delete return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if delete product.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_delete_product
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$product_id</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$product_categories</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$product_id</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$product_categories</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_delete_service" id="if_delete_service"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_delete_service</span> (line <span class="line-number">1342</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if delete service.</p>
+<p class="description"><p>Description:</p><p>This function make a delete query into database. param $service_id and $service_categories used into where.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to delete return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if delete service.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_delete_service
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$service_id</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$service_categories</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$service_id</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$service_categories</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_delete_service_category" id="if_delete_service_category"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_delete_service_category</span> (line <span class="line-number">1249</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if delete service category.</p>
+<p class="description"><p>Description:</p><p>This function make two delete query first into services and then into services category.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to delete two of them return true else return  false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if delete services category.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			if_delete_service_category
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$category_table_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$category_table_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_update_category" id="if_update_category"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_update_category</span> (line <span class="line-number">1155</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if update category.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success update or false if faild to update.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if update category.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">true</span>
+		<span class="method-name">
+			if_update_category
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$category_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$category_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$category_id</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$category_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodif_update_services_category" id="if_update_services_category"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">if_update_services_category</span> (line <span class="line-number">1206</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if update services category.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success update or false if faild to update.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> if update services category.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">true</span>
+		<span class="method-name">
+			if_update_services_category
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$category_id</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$category_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$category_id</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$category_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinsert_cart_shop" id="insert_cart_shop"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert_cart_shop</span> (line <span class="line-number">1643</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function insert cart shop  &lt;p&gt;Description:&lt;/p&gt;  This function insert data into codeingiter shop cart.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success delete return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> insert_cart_shop.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			insert_cart_shop
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodinsert_category" id="insert_category"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert_category</span> (line <span class="line-number">1071</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function for insert a new category.</p>
+<p class="description"><p>Description:</p><p>This function make a insert query into database.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to insert return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> insert category.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			insert_category
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodinsert_image" id="insert_image"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert_image</span> (line <span class="line-number">1684</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function for insert image into database.</p>
+<p class="description"><p>Description:</p><p>This function insert image into specifically product where id and category is $product_id and $product_categories .</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success insert return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> insert image.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			insert_image
+		</span>
+					(<span class="var-type">undefined</span>&nbsp;<span class="var-name">$product_id</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$product_categories</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">undefined</span>
+				<span class="var-name">$product_id</span>			</li>
+					<li>
+				<span class="var-type">undefined</span>
+				<span class="var-name">$product_categories</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinsert_product" id="insert_product"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert_product</span> (line <span class="line-number">316</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Boolean function insert a product.</p>
+<p class="description"><p>Description:</p><p>This function make a insert query into database with product data.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success to insert a new product return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> insert product.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			insert_product
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodinsert_product_image" id="insert_product_image"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert_product_image</span> (line <span class="line-number">215</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function insert product image.</p>
+<p class="description"><p>Description:</p><p>This function make a update query into database with image data. The params $config and $file_data is the wheres into db query.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to update return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> insert product image.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			insert_product_image
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$item_data</span> = <span class="var-default">array()</span>], <span class="var-type">string</span>&nbsp;<span class="var-name">$config</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$file_data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$item_data</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$config</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file_data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinsert_product_to_deals" id="insert_product_to_deals"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert_product_to_deals</span> (line <span class="line-number">352</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Boolean function insert product to deals.</p>
+<p class="description"><p>Description:</p><p>This function make a insert query into database with product data.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success to insert a new product return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> insert product.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			insert_product_to_deals
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$product_data</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$product_data</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodinsert_service" id="insert_service"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert_service</span> (line <span class="line-number">391</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Boolean function insert a service.</p>
+<p class="description"><p>Description:</p><p>This function make a insert query into database with data.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success to insert a new service return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> insert service.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			insert_service
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodinsert_service_category" id="insert_service_category"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert_service_category</span> (line <span class="line-number">1098</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function for insert a new service category.</p>
+<p class="description"><p>Description:</p><p>This function make a insert query into database.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to insert return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> insert service category.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			insert_service_category
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsearch_result" id="search_result"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">search_result</span> (line <span class="line-number">1884</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if find search.</p>
+<p class="description"><p>Description:</p><p>This function make a search query.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return result data else return return  empty data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> search_result.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			search_result
+		</span>
+					([<span class="var-type">type</span>&nbsp;<span class="var-name">$search_term</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">type</span>
+				<span class="var-name">$search_term</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_all_cancelled_orders" id="select_all_cancelled_orders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_cancelled_orders</span> (line <span class="line-number">773</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all cancelled orders.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database and select all information of cancelled orders.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data  else return return empty array  of data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all cancelled orders.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_all_cancelled_orders
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_cancelled_services_request" id="select_all_cancelled_services_request"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_cancelled_services_request</span> (line <span class="line-number">832</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all cancelled services request.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database and select all information of cancelled request services.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data  else return return empty array  of data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all cancelled services request.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_all_cancelled_services_request
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_categories" id="select_all_categories"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_categories</span> (line <span class="line-number">1015</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all categories.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database and take information form product categories.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data else return message.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all categories.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_all_categories
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_deals_product" id="select_all_deals_product"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_deals_product</span> (line <span class="line-number">548</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all deal products.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database and select all data of deal products.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data  else return return empty array  of data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select product.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_all_deals_product
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_finished_orders" id="select_all_finished_orders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_finished_orders</span> (line <span class="line-number">714</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all finished orders.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database and select all information of finished orders.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data  else return return empty array  of data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all finished orders.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_all_finished_orders
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_finished_services_request" id="select_all_finished_services_request"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_finished_services_request</span> (line <span class="line-number">894</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all finished services request.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database and select all information of request services.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data  else return return empty array  of data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all finished services request.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_all_finished_services_request
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_orders" id="select_all_orders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_orders</span> (line <span class="line-number">658</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all orders.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database and select all information of orders.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data  else return return empty array  of data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all orders.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_all_orders
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_product_by_category" id="select_all_product_by_category"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_product_by_category</span> (line <span class="line-number">431</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all product with help of category name.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database and select all information of products. The params $category_name is the where into db query.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data  else return return empty array  of data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all product by category.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_all_product_by_category
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$category_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$category_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_all_request_services" id="select_all_request_services"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_request_services</span> (line <span class="line-number">956</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all request services.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database and select all information of request services.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data  else return return empty array  of data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all request services.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_all_request_services
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_services_by_category" id="select_all_services_by_category"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_services_by_category</span> (line <span class="line-number">609</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all service  with help of category name.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database and select all information of services. The params $category_name is the wheres into db query.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data  else return return empty array  of data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all services by category.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_all_services_by_category
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$category_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$category_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_all_services_categories" id="select_all_services_categories"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_services_categories</span> (line <span class="line-number">1043</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all services categories.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database and take information form services categories.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data else return message.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all services categories.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_all_services_categories
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_users_contacts" id="select_all_users_contacts"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_users_contacts</span> (line <span class="line-number">1759</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all users contacts.</p>
+<p class="description"><p>Description:</p><p>This function make a get query..</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return data else return empty data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all users contacts.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">data.</span>
+		<span class="method-name">
+			select_all_users_contacts
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_all_users_email" id="select_all_users_email"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_all_users_email</span> (line <span class="line-number">1797</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all users email contacts.</p>
+<p class="description"><p>Description:</p><p>This function make a get query.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return data else return empty data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select all users email contacts.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">data.</span>
+		<span class="method-name">
+			select_all_users_email
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodselect_category_id_by_name" id="select_category_id_by_name"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_category_id_by_name</span> (line <span class="line-number">260</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select a category id by category name.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database. The params $category_name is the wheres into db query.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data  else return message.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select category id by name.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_category_id_by_name
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$category_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$category_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_product" id="select_product"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_product</span> (line <span class="line-number">489</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select all data of a product with help of category name and product id.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database and select all information of products. The params $category_name and $id is the where into db query.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data  else return return empty array  of data.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select product.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_product
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$id</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$category_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$id</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$category_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_service_category_id_by_name" id="select_service_category_id_by_name"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_service_category_id_by_name</span> (line <span class="line-number">289</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select a service category id by category name.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into database. The params $category_name is the wheres into db query.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> success return array of data  else return message.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select service category id by name.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">if</span>
+		<span class="method-name">
+			select_service_category_id_by_name
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$category_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$category_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodselect_user_by_email" id="select_user_by_email"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">select_user_by_email</span> (line <span class="line-number">1725</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function select_users_by_email.</p>
+<p class="description"><p>Description:</p><p>This function make a get query into s user.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return data else return error message.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> select users by email.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">data.</span>
+		<span class="method-name">
+			select_user_by_email
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$email</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$email</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsend_newsletters" id="send_newsletters"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">send_newsletters</span> (line <span class="line-number">1906</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This function is for send a general message.</p>
+<p class="description"><p>Description:</p><p>makes a send mail with subject and message which will give.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if email send success or faild if dont</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">true</span>
+		<span class="method-name">
+			send_newsletters
+		</span>
+					(<span class="var-type">undefined</span>&nbsp;<span class="var-name">$subject</span>, <span class="var-type">undefined</span>&nbsp;<span class="var-name">$message</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">undefined</span>
+				<span class="var-name">$subject</span>			</li>
+					<li>
+				<span class="var-type">undefined</span>
+				<span class="var-name">$message</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdate_contact" id="update_contact"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">update_contact</span> (line <span class="line-number">1826</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function if update contact.</p>
+<p class="description"><p>Description:</p><p>This function make a update query into user_contacts.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if query success return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> update contact.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			update_contact
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodupdate_orders_status" id="update_orders_status"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">update_orders_status</span> (line <span class="line-number">1368</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function for update orders status.</p>
+<p class="description"><p>Description:</p><p>This function make a update query into database. $order_number from input used in where.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to update return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> update orders status.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			update_orders_status
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodupdate_request_services_status" id="update_request_services_status"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">update_request_services_status</span> (line <span class="line-number">1464</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">boolean function for update request services status.</p>
+<p class="description"><p>Description:</p><p>This function make a update query into database services_request_number from input used in where.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> if success to update return true else return false.</li>
+				<li><span class="field">author:</span> Alex Patsanis &lt;<a href="mailto:alexpatsanis@gmail.gr">alexpatsanis@gmail.gr</a>&gt;</li>
+				<li><span class="field">name:</span> update services status status.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean.</span>
+		<span class="method-name">
+			update_request_services_status
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$table</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$table</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../CodeIgniter/Libraries/CI_Model.html">CI_Model</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../CodeIgniter/Libraries/CI_Model.html#method__construct">CI_Model::__construct()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 07 May 2015 13:12:39 +0200 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>
